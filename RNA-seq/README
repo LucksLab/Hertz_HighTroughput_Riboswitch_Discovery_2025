@@ -1,0 +1,26 @@
+# The following are steps to run the RNA-seq analysis from Hertz, et. al. 
+# 20 March 2025
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# File Key
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+### Variant_Genome.fasta
+This FASTA file is the full length RNA transcrip of all sequences in the oligo pool
+
+### LMH_1_GitHub.out.sam
+This .sam file is the first 10000 lines of the STAR output for sample LMH_1
+
+### Read_Classification_SUBMIT.ipynb
+This Jupyter notebook takes **.out.sam** files and compiles the read length to each variant then assess transcription termination.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# The following are the commands for generating a genome for STAR from Variant_Genome.fasta
+# 10 May 2025
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Assemble DNA sequences into a genomic assembly
+module load megahit/1.0.6.1
+megahit -o megahit_Variant_genome_directory -r Variant_Genome.fasta
+
+# Generates the necessary genome index files for STAR to efficiently map reads to a reference genome
+module load STAR/2.7.9a
+STAR --runMode genomeGenerate --genomeDir megahit_Variant_genome_directory --genomeFastaFiles Variant_Genome.fasta --genomeSAindexNbases 8

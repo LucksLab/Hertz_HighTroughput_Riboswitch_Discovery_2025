@@ -1,0 +1,2 @@
+# The following PEAR (v0.9.6, Zhang J, et. al. (2014) PMID: 24142950) command was used to combine the FASTQ files for each library.
+pear -f [library_#_R1].fastq.gz -r [library_#_R2].fastq.gz -o library_#/ library_#_PEAR -y 4G -j 1
