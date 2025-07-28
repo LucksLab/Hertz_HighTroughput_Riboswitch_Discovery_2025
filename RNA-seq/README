@@ -1,26 +1,35 @@
-# The following are steps to run the RNA-seq analysis from Hertz, et. al. 
-# 20 March 2025
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-# File Key
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-### Variant_Genome.fasta
-This FASTA file is the full length RNA transcrip of all sequences in the oligo pool
+# RNA-seq Analysis Workflow — Hertz et al.  
+**Last updated: 20 March 2025**
 
-### LMH_1_GitHub.out.sam
-This .sam file is the first 10000 lines of the STAR output for sample LMH_1
+This repository contains files and instructions to reproduce the RNA-seq read analysis pipeline used in Hertz et al. This includes read mapping with STAR, variant-specific read classification, and transcription termination assessment.
 
-### Read_Classification_SUBMIT.ipynb
-This Jupyter notebook takes **.out.sam** files and compiles the read length to each variant then assess transcription termination.
+---
 
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-# The following are the commands for generating a genome for STAR from Variant_Genome.fasta
-# 10 May 2025
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+## 📁 File Descriptions
 
-# Assemble DNA sequences into a genomic assembly
+| File | Description |
+|------|-------------|
+| `Variant_Genome.fasta` | Full-length RNA transcript sequences from the oligo pool (used as a reference genome). |
+| `LMH_1_GitHub.out.sam` | First 10,000 lines of STAR output for sample `LMH_1`. |
+| `Read_Classification_SUBMIT.ipynb` | Jupyter notebook that parses `.out.sam` files, counts read lengths for each variant, and evaluates transcription termination. |
+
+---
+
+## 🧬 Building the STAR Genome Index  
+**Date: 10 May 2025**
+
+Follow the steps below to prepare the reference genome for STAR read mapping.
+
+### 1. Assemble Genome (Optional: if input FASTA is fragmented)
+```bash
 module load megahit/1.0.6.1
 megahit -o megahit_Variant_genome_directory -r Variant_Genome.fasta
-
-# Generates the necessary genome index files for STAR to efficiently map reads to a reference genome
+```
+### 2. Generate STAR Genome Index
+```bash
 module load STAR/2.7.9a
-STAR --runMode genomeGenerate --genomeDir megahit_Variant_genome_directory --genomeFastaFiles Variant_Genome.fasta --genomeSAindexNbases 8
+STAR --runMode genomeGenerate \
+     --genomeDir megahit_Variant_genome_directory \
+     --genomeFastaFiles Variant_Genome.fasta \
+     --genomeSAindexNbases 8
+```
