@@ -1,7 +1,7 @@
 # R-scape Covariation Analysis Pipeline — Fluoride Riboswitch  
 **Last updated: 21 August 2024**
 
-This repository outlines the workflow used to create and analyze covariation models of the fluoride riboswitch, including FASTA preparation, alignment generation, and R-scape analysis.
+This repository outlines the workflow used to create and analyze covariation models of the fluoride riboswitch, including FASTA preparation, alignment generation, and R-scape (v2.0.0.j) analysis.
 
 ---
 
