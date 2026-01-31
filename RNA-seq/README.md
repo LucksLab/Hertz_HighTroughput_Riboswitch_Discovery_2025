@@ -20,6 +20,7 @@ This repository contains files and instructions to reproduce the RNA-seq read an
 **Date: 10 May 2025**
 
 Follow the steps below to prepare the reference genome for STAR read mapping.
+BacTermFinder: Taheri Ghahfarokhi, S. M. A., & Peña-Castillo, L. (2025). BacTermFinder: a comprehensive and general bacterial terminator finder using a CNN ensemble. NAR Genomics and Bioinformatics, 7(1), lqaf016.
 
 ### 1. Assemble Genome (Optional: if input FASTA is fragmented)
 ```bash
