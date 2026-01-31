@@ -13,6 +13,8 @@ This repository contains files and instructions to reproduce the RNA-seq read an
 | `LMH_1_GitHub.out.sam` | First 10,000 lines of STAR output for sample `LMH_1`. |
 | `Read_Classification_RegExp.ipynb` | Jupyter notebook that parses `.out.sam` files, counts read lengths for each variant, and evaluates transcription termination based on a polyU Regular Expression (pattern = r'TTTTT\|T[AGC]TTTT\|TT[AGC]TTT\|TTT[AGC]TT'). |
 | `Read_Classification_BacTermFinder.ipynb` | Jupyter notebook that parses `.out.sam` files, counts read lengths for each variant, and evaluates transcription termination based on output from BacTermFinder. |
+| `BacTermFinder_Processing.ipynb` | Jupyter notebook that parses `out*.fasta_mean.csv` file from BacTermFinder. |
+
 
 ---
 
