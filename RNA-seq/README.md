@@ -3,6 +3,8 @@
 
 This repository contains files and instructions to reproduce the RNA-seq read analysis pipeline used in Hertz et al. This includes read mapping with STAR, variant-specific read classification, and transcription termination assessment.
 
+Raw sequencing files were uploaded to the NCBI BioProject with the ID: PRJNA1359411.
+
 ---
 
 ## 📁 File Descriptions
