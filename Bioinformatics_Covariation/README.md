@@ -33,6 +33,20 @@ This repository outlines the workflow used to create and analyze covariation mod
 
 ---
 
+## 💻 Computational Environment
+
+| Software | Version | 
+|------|-------------|
+| `Python` | 3.10.9 |
+| `Jupyter` | 6.5.7 |
+| `Biophython` |  1.78 |
+| `Pandas` |  2.2.3 |
+| `Microscoft Excel` |  16.110.2 |
+| `re` |  2.2.1 |
+| `R-SCAPE` |  2.0.0.j |
+
+---
+
 ## 🧪 Terminal Commands for R-scape Analysis  
 **Run date: 20 August 2024**
 
