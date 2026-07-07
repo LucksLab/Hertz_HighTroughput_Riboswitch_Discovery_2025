@@ -17,6 +17,22 @@ Raw sequencing files were uploaded to the NCBI BioProject with the ID: PRJNA1359
 | `Read_Classification_BacTermFinder.ipynb` | Jupyter notebook that parses `.out.sam` files, counts read lengths for each variant, and evaluates transcription termination based on output from BacTermFinder. |
 | `BacTermFinder_Processing.ipynb` | Jupyter notebook that parses `out*.fasta_mean.csv` file from BacTermFinder. |
 
+---
+
+## 💻 Computational Environment
+
+| Software | Version | 
+|------|-------------|
+| `Python` | 3.10.9 |
+| `Jupyter` | 6.5.7 |
+| `Biophython` |  1.78 |
+| `Pandas` |  2.2.3 |
+| `PEAR` | 0.9.6 |
+| `STAR` | 2.7.9a |
+| `MEGAHIT` | 1.0.6.1 |
+| `BacTermFinder` | 1.0 |
+| `Microscoft Excel` |  16.110.2 |
+| `re` |  2.2.1 |
 
 ---
 
