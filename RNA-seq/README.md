@@ -34,6 +34,18 @@ Raw sequencing files were uploaded to the NCBI BioProject with the ID: PRJNA1359
 | `Microscoft Excel` |  16.110.2 |
 | `re` |  2.2.1 |
 
+pear-env:
+| Software | Version | 
+|------|-------------|
+| `_libgcc_mutex` | 0.1 |
+| `_openmp_mutex` | 4.5 |
+| `bzip2` |  1.0.8 |
+| `libgcc-ng` |  13.2.0 |
+| `libgomp` | 13.2.0 |
+| `libzlib` | 1.2.13 |
+| `pear` | 0.9.6 |
+| `zlib` | 1.2.13 |
+
 ---
 
 ## 🧬 Building the STAR Genome Index  
