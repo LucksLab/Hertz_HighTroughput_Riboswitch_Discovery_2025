@@ -1,0 +1,15 @@
+Python==3.10.9
+Jupyter==6.5.7
+Biophython==1.78
+Pandas==2.2.3
+PEAR==0.9.6
+STAR==2.7.9a
+MEGAHIT==1.0.6.1
+re==2.2.1
+_libgcc_mutex==0.1
+_openmp_mutex==4.5
+bzip2==1.0.8
+libgcc-ng==13.2.0
+libgomp==13.2.0
+libzlib==1.2.13
+zlib==1.2.13
