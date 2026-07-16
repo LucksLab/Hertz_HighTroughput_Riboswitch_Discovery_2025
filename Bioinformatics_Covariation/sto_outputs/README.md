@@ -20,6 +20,8 @@ This repository contains the .sto file alignments for various riboswitches gener
 | `Rfam_ID]_[riboswitch].arnold.sto` | Input to CaCoFold after running ARNold. |
 | `[Rfam_ID]_[riboswitch].arnold.cacofold.sto` | Output from CaCoFold after running ARNold. |
 | `[Rfam_ID]_[riboswitch].all.sto` | Output from CaCoFold after running cmsearch. |
+| `XRiboswitch.cm` | Riboswitch covariation model |
+| `[Rfam_ID]_NCBI_Extended.fa` | FASTA file output after extended the Rfam aptamers with the downstream genome sequence from the NCBI |
 
 ---
 
