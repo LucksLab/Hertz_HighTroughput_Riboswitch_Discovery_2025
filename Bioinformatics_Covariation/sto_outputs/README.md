@@ -32,11 +32,11 @@ This repository contains the .sto file alignments for various riboswitches gener
 ```bash
 R-scape --cacofold [Rfam_ID]_[riboswitch].arnold.sto
 ```
-### Build the covariation model
+### 🔹 Build the covariation model
 ```python
 cmbuild XRiboswitch.cm [Rfam_ID]_[riboswitch].arnold.cacofold.sto
 ```
-### Calibrate CaCoFold Output
+### 🔹 Calibrate CaCoFold Output
 ```python
 cmcalibrate XRiboswitch.cm
 ```
